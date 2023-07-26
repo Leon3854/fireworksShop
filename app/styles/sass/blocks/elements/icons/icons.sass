@@ -1,0 +1,105 @@
+.icons
+	margin: 0 auto
+	width: 100%
+
+.ico.ico-circle
+	color: rgba(204, 204, 204, 1)
+	&:hover
+		color: rgba(232, 18, 18, 1)
+.ico-search
+	&:hover
+		color: rgba(232, 18, 18, 1)
+
+.ico
+	font-size: 30px
+	transition: all ease .5s
+	cursor: pointer
+	color: rgba(68, 62, 62, 1)
+		
+.ico-menu
+	font-size: 34px
+.ico-dot
+	font-size: 30px
+
+
+.ico-phone
+	color: #fff
+	&:hover
+		color: rgba(232, 18, 18, 1)
+
+
+.icon-color
+	border: 2px dashed #323232
+	background-color: rgba(#a3a3a3, .5)
+	padding: 50px
+	display: flex
+	justify-content: flex-start
+
+
+.color-click-heart, .color-click-cart
+	display: inline-block
+	position: relative
+	width: 30px
+	height: 30px
+	padding: 0px
+	z-index: 1
+	transition: all ease .5s
+	cursor: pointer
+
+.ico-heart__border, .ico-cart__border
+	position: absolute
+	z-index: 2
+	color: rgba(232, 18, 18, 1)
+	left: 0
+	top: -9px
+	font-size: 30px
+	bottom: -10px
+	opacity: 0
+	cursor: pointer
+	transition: all ease .5s
+.ico-heart__border.is-active, .ico-cart__border.is-active
+	opacity: 1
+.ico-heart__fill, .ico-cart__fill
+	position: absolute
+	z-index: 3
+	left: 0
+	top: -9px
+	font-size: 30px
+	opacity: 0
+	transition: all ease .5s
+	color: rgba(232, 18, 18, 1)
+.ico-heart__fill.is-active, .ico-cart__fill.is-active
+	position: absolute
+	left: 0
+	top: -9px
+	opacity: 1
+.color-click-arrow, .color-click-cart
+	border: 1px solid red
+	margin-left: 15px
+
+.bg-arro
+	background-color: #fff
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	font-size: 16px
+	color: #443E3E
+	cursor: pointer
+.bg-arrow__right, .bg-arrow__left
+	transition: all ease 1s
+.bg-arrow__right.is-active
+	color: #fff
+	background-color: rgba(232, 18, 18, 1)
+.bg-arrow__left.is-active
+	color: #fff
+	background-color: rgba(232, 18, 18, 1)
+
+.ico-search
+	font-size: 16px
+	transition: all ease 1s
+	cursor: pointer
+	&:hover
+		color: rgba(232, 18, 18, 1)
