@@ -1,0 +1,681 @@
+
+.icons
+	margin: 0 auto
+	width: 100%
+
+.ico-circle
+	color: rgba(204, 204, 204, 1)
+	&:hover
+		color: rgba(232, 18, 18, 1)
+.ico-search
+	&:hover
+		color: rgba(232, 18, 18, 1)
+
+
+
+.ico-phone
+	color: #fff
+	&:hover
+		color: rgba(232, 18, 18, 1)
+
+
+.icon-color
+	margin-top: 10px
+	background-color: rgba(#a3a3a3, .25)
+	padding: 10px
+	display: flex
+	justify-content: flex-start
+	box-shadow: 0px 3px 10px rgba(68, 0, 24, .25)
+
+.color-click-heart, .color-click-cart, .color-cart-goods
+	display: inline-block
+	position: relative
+	width: 30px
+	height: 30px
+	padding: 0px
+	z-index: 1
+	transition: all ease .5s
+	cursor: pointer
+
+.ico-heart__border, .ico-cart__border, .cart-goods__border
+	position: absolute
+	z-index: 2
+	color: rgba(232, 18, 18, 1)
+	left: 0
+	top: -9px
+	font-size: 30px
+	bottom: -10px
+	opacity: 0
+	cursor: pointer
+	transition: all ease .5s
+.ico-heart__border.is-active,
+.ico-cart__border.is-active,
+.cart-goods__border.is-active
+	opacity: 1
+.ico-heart__fill,
+.ico-cart__fill,
+.cart-goods__fill
+	position: absolute
+	z-index: 3
+	left: 0
+	top: -9px
+	font-size: 30px
+	opacity: 0
+	transition: all ease .5s
+	color: rgba(232, 18, 18, 1)
+.ico-heart__fill.is-active,
+.ico-cart__fill.is-active,
+.cart-goods__fill.is-active
+	position: absolute
+	left: 0
+	top: -9px
+	opacity: 1
+.color-click-arrow,
+.color-click-cart,
+.color-cart-goods
+	margin-left: 15px
+
+.bg-arro
+	background-color: #fff
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	font-size: 16px
+	color: #443E3E
+	cursor: pointer
+.bg-arrow__right, .bg-arrow__left
+	transition: all ease 1s
+.bg-arrow__right.is-active
+	color: #fff
+	background-color: rgba(232, 18, 18, 1)
+.bg-arrow__left.is-active
+	color: #fff
+	background-color: rgba(232, 18, 18, 1)
+
+.ico-search
+	font-size: 16px
+	transition: all ease 1s
+	cursor: pointer
+	&:hover
+		color: rgba(232, 18, 18, 1)
+
+.btns
+	margin-top: 10px
+
+.btn-tab, .categories
+	border: 1px solid green
+	width: 1200px
+	margin: 0 auto
+	padding: 10px
+
+.new-firewoks, .video-player, .catalog-btn
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	transition: all ease 1s
+	& i
+		margin-left: 10px
+	& span
+		text-transform: uppercase
+		letter-spacing: 1px
+		transition: all ease 1s
+		margin-left: 10px
+
+.new-firewoks
+	border: 1px solid #fff
+	height: 41px
+	background: #fff
+	color: rgba(68, 62, 62, 1)
+	padding: 8px 20px
+	& i:first-child
+		margin-left: 0
+.new-firewoks span
+	font-size: 20px
+	font-weight: 300
+	color: #443E3E
+.new-firewoks:hover
+	background: #FCCD05
+	border: 1px solid rgba(#443E3E, .5)
+	box-shadow: 0px 1px 3px rgba(#443e3e, .5)
+	color: #fff
+	span
+		color: #fff
+.new-firewoks:active
+	background: linear-gradient(90deg, #E81212 0%, #FCCD05 100%)
+	color: #fff
+	span
+		color: #fff
+
+
+
+.video-player
+	border: 1px solid rgba(#fff, 0)
+	background: none
+	padding: 10px 30px
+	transition: all ease 1s
+	& i
+		// margin-left: 10px
+		font-size: 20px
+	& i:first-child
+		margin-left: 0
+.video-player span
+	transition: all ease 1s
+	margin-left: 10px
+	font-size: 16px
+	font-weight: 300
+	letter-spacing: 1px
+	text-transform: uppercase
+	color: #443E3E
+.video-player:hover
+	background: #FCCD05
+	border: 1px solid rgba(#443E3E, .5)
+	box-shadow: 0px 1px 3px rgba(#443e3e, .5)
+	color: #fff
+	span
+		color: #fff
+.video-player:active
+	background: linear-gradient(90deg, #E81212 0%, #FCCD05 100%)
+	color: #fff
+	span
+		color: #fff
+	
+.catalog-btn-menu
+	background-color: #a3a3a3
+.catalog-btn
+	border: 1px solid rgba(#fff, 0)
+	padding: 10px 20px
+	background: none
+	height: 48px
+	color: #fff
+	i
+		transition: all ease 1s
+		padding: 0
+		margin: 0
+		font-size: 24px
+	span
+		margin-left: 10px
+		text-transform: uppercase
+		letter-spacing: 1px
+		font-size: 14px
+		&:hover
+			color:#E81212
+	&:hover
+		background-color: #f3f3f3
+		box-shadow: 0px 1px 3px rgba(#443e3e, .5)
+.catalog-btn:hover i, .catalog-btn:hover span
+	color:#E81212
+
+.btn-red
+	padding: 15px 30px
+	border: none
+	background: #E81212
+	color: #fff
+	font-family: $rubikfont
+	font-size: 12px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+	text-transform: uppercase
+
+// 
+// 
+// 
+.btn-color
+	padding: 15px 30px
+	border: none
+	font-family: $rubikfont
+	font-size: 12px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+	text-transform: uppercase
+	transition: all ease .5s
+	box-shadow: 0px 3px 5px 1px rgba(0,0,0, .6)
+	&:hover
+		box-shadow: 0px 3px 5px 1px rgba(0,0,0, .2)
+
+.btn-color.red
+	color: #fff
+	background: #E81212
+
+.btn-color.red-gradient
+	color: #fff
+	background: linear-gradient(90deg, #E81212 0%, #FCCD05 100%)
+
+.btn-color.border-red
+	color: #E81212
+	border: 1px solid #E81212
+	background: none
+
+.btn-color.pink
+	background: #FBE0E0
+	color: rgba(68, 62, 62, 1)
+
+.btn-color.no-body
+	color: rgba(68, 62, 62, 1)
+	background: none
+
+.btn-color.gray, .btn-color.duble
+	border: none
+	color: rgba(68, 62, 62, 1)
+	background: #ccc
+
+.btn-color.white
+	color: #fff
+	border: 1px solid #fff
+	background: none
+
+// 
+// 
+// 
+
+.image-card
+	width: 300px
+	height: 240px
+	outline: none
+	display: inline-block
+	position: relative
+	z-index: 1
+	transition: all ease .5s
+	&::after
+		position: absolute
+		content: ''
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		opacity: .9
+		transition: opacity .5s
+		background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))
+
+.image-card:hover::after
+	opacity: 1
+	background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))
+
+.name-description
+	position: absolute
+	left: 10px
+	bottom: 10px
+	color: #fff
+	z-index: 2
+	transition: opacity 1s ease
+	opacity: 1
+	h2
+		font-size: 18px
+		font-family: $rubikfont
+		font-style: normal
+		font-weight: 600
+		line-height: 140%
+	p
+		font-size: 14px
+		font-family: $rubikfont
+		font-style: normal
+		font-weight: 600
+		line-height: 140%
+.image-card:hover .name-description
+	opacity: 0
+.btn-more-details
+	position: absolute
+	z-index: 2
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	border: none
+	background: rgba(232, 18, 18, 1)
+	color: #fff
+	font-family: $rubikfont
+	font-size: 12px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+	text-transform: uppercase
+	padding: 15px 30px
+	transition: opacity 1s ease
+	opacity: 0
+	cursor: pointer
+.image-card:hover .btn-more-details
+	opacity: 1
+
+.card-data
+	background-image: url(../../../images/dist/elements/bg_photo.png)
+	background-size: cover
+	background-repeat: no-repeat
+	position: relative
+	z-index: 1
+	width: 450px
+	height: 300px
+	outline: none
+	display: inline-block
+	transition: all ease .5s
+	overflow: hidden
+	&::after
+		position: absolute
+		content: ''
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		opacity: .4
+		transition: opacity .5s
+		background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))
+.card-data:hover::after
+	opacity: 1
+	background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))
+.card-content
+	position: absolute
+	z-index: 50
+	left: 20px
+	top: 180px
+	width: 380px
+	transition: all ease .5s
+.card-content__data
+	font-family: $rubikfont
+	font-size: 14px
+	font-style: normal
+	font-weight: 400
+	line-height: 150%
+	color: rgba(251, 224, 224, 1)
+.card-content__text
+	margin-top: 10px
+	font-family: $rubikfont
+	font-size: 18px
+	font-style: normal
+	font-weight: 600
+	line-height: 150%
+	text-transform: uppercase
+	color:#fff
+.card-content__btn
+	margin-top: 30px
+.card-data:hover .card-content
+	top: 44px
+
+
+/*****************************/
+.card
+	box-shadow: 0px 5px 8px rgba(0, 0, 0, .22)
+	position: relative
+	z-index: 1
+	overflow: hidden
+	outline: none
+	display: inline-block
+	transition: opacity .5s
+
+.card.card-sale
+	width: 380px
+	cursor: pointer
+.circle-box
+	border-radius: 50%
+	box-shadow: 0px 0px 50px 100px #ffffcc
+	background-color: #ffffcc
+	width: 600px
+	height: 400px
+	position: absolute
+	left: 20px
+	top: 220px
+	z-index: 2	
+.circle-sale
+	position: absolute
+	content: ''
+	z-index: 4
+	right: 10px
+	bottom: 10px
+	width: 66px
+	height: 66px
+	border-radius: 50%
+	background: rgba(232, 18, 18, .9)
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #fff
+	font-family: 'Roboto', sans-serif
+	font-weight: 300
+	font-size: 34px
+
+.card-sale__content
+	position: absolute
+	z-index: 6
+	left: 27%
+	transform: rotate(-8deg)
+	bottom: 10px
+	width: 245px
+	height: 80px
+	letter-spacing: 2px
+	font-family: 'Rubik', sans-serif
+	font-size: 22px
+	font-weight: 400
+	line-height: 1.2
+	overflow: hidden
+	text-overflow: ellipsis
+	display: -webkit-box
+	-webkit-line-clamp: 2
+	-webkit-box-orient: vertical
+.card-sale__content span
+	font-size: 14px
+	position: absolute
+	letter-spacing: normal
+	// font-family: $futurafont
+	font-weight: bold
+	right: 60px
+	bottom: 0px
+	color: rgba(232, 18, 18, 1)
+
+// 
+// 
+//
+
+.star-rating, .rating-js, .firework-forms
+	border: 1px solid black
+	width: 1200px
+	margin: 0 auto
+	// background: #a3a3a3
+
+.simple-rating
+	position: relative
+	font-size: 40px
+	display: inline-block
+
+.simple-rating::before
+	content: '★★★★★'
+	display: block
+
+.simple-rating__items
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	display: flex
+	flex-direction: row-reverse
+	overflow: hidden
+
+.simple-rating__item
+	position: absolute
+	width: 0
+	height: 0
+	opacity: 0
+	visibility: hidden
+	top: 0
+	left: 0
+.simple-rating__label
+	flex: 0 0 20%
+	height: 100%
+	cursor: pointer
+	color: #ffffcc
+
+.simple-rating__label::before
+	position: absolute
+	content: '★'
+	display: block
+	transition: color .5s ease 0s
+
+.simple-rating__item:checked,
+.simple-rating__item:checked ~ .simple-rating__label
+	color: $accent
+
+.simple-rating__label:hover,
+.simple-rating__label:hover ~ .simple-rating__label,
+.simple-rating__label:checked ~ .simple-rating__label:hover
+	color: #ffef9f
+
+
+.rating
+	display: flex
+	align-items: flex-end
+	font-size: 40px
+	line-height: 0.75
+
+.rating__body
+	position: relative
+//
+.rating__body::before
+	content: '★★★★★'
+	display: block
+.rating__active
+	position: absolute
+	width: 0%
+	height: 100%
+	top: 0
+	left: 0
+	overflow: hidden
+.rating__active::before
+	content: '★★★★★'
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	color: #ffd300
+
+.rating__items
+	display: flex
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+
+.rating__item
+	flex: 0 0 20%
+	height: 100%
+	opacity: 0
+.rating__value
+	font-size: 50%
+	line-height: 1
+	padding: 0 0 0 10px
+
+///*****************************
+// *****************************
+// *****************************
+// SELECT GOODS
+.form-control
+	border: 1px solid red
+	position: relative
+	width: 100% 
+.contact-form__items
+	display: flex
+	justify-content: space-between
+	align-items: start
+.contact-form__item
+	display: flex
+	flex-direction: column
+// .btn-color {
+// }
+// .red {
+// }
+
+.carausel
+	background: salmon
+	width: 1200px
+	height: auto
+	margin: 0 auto
+	position: relative
+	z-index: 10
+	display: flex
+	justify-content: center
+	&::after
+		position: absolute
+		content: ''
+		left: 1%
+		bottom: 2px
+		width: 98%
+		height: 1px
+		z-index: -100
+		border-radius: 10px
+		box-shadow: 0px 10px 25px 2px rgba(0, 0, 0, 1)
+.card-goods__slider
+	width: 244px
+	height: 240px
+
+.card-goods__slide
+	width: 320px
+	height: 200px
+	background-color: #fff
+
+.card-goods__slider .slick-dots
+	position: absolute
+	left: 0
+	bottom: 0
+
+.slick-dots li button
+	opacity: 0
+.card-goods__slider .slick-dots li
+	background: rgba(204, 204, 204, 1)
+	height: 3px
+	width: 20%
+		
+.card-goods__slider .slick-dots li.slick-active
+	background: rgba(252, 205, 5, 1)
+
+
+.main-slider_carousel-block.slick-next.slick-arrow
+	position: absolute
+	right: 10px
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	transition: all ease .5s
+.card-goods__right
+	position: absolute
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	z-index: 10
+	right: 0
+	top: -25%
+	font-size: 16px
+	color: #000
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: all ease .5s
+	&:hover
+		background: rgba(232, 18, 18, 1)
+		color: #fff
+.main-slider_carousel-block.slick-prev.slick-arrow
+	z-index: 10
+	position: absolute
+	left: 10px
+	width: 30px
+	height: 30px
+	transition: all ease .5s
+.card-goods__left
+	position: absolute
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	z-index: 10
+	left: 0
+	top: -25%
+	font-size: 16px
+	color: #000
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: all ease .5s
+	&:hover
+		background: rgba(232, 18, 18, 1)
+		color: #fff
+
