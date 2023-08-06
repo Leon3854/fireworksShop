@@ -3,7 +3,6 @@ const icons = (triggerSelector, iconBoard, iconFill) => {
   const iconboard = document.querySelector(iconBoard);
   const iconfill = document.querySelector(iconFill);
   trigger.forEach((item) => {
-    console.log(item);
     item.addEventListener("click", (e) => {
       if (e.target) {
         e.preventDefault();
