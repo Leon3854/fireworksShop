@@ -1,0 +1,43 @@
+.red-line
+	background-color: $redcolor
+.red-control-line
+	height: 50px
+	width: 100%
+	position: relative
+	z-index: 1
+.control-line__main-nav
+	height: 100%
+.main-nav__list
+	height: 100%
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+.main-nav__item
+	height: 100%
+.main-nav__link:first-child
+	padding: 0 20px
+.main-nav__link
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 0px 20px
+	@include myfont($whitecolor, $rub, 14px, normal, 400, 17px, uppercase)
+	transition: all ease .5s
+	&:hover
+		background-color: $whitecolor
+		color: $redcolor
+.nav-catalog
+	color: $whitecolor
+	margin-right: 10px
+	width: 24px
+	height: 24px
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 24px
+	transition: all ease .5s
+.main-nav__link:hover .nav-catalog
+	color: $redcolor
+

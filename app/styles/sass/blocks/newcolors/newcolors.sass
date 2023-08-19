@@ -1,0 +1,144 @@
+.newcolors
+	margin-top: 100px
+	
+.newcolors__main-title
+	position: relative
+	width: 520px
+	height: auto
+	@include myfont($textcolor, $rub, 36px, normal, 600, normal, none)
+	&::after
+		@include title-after('',absolute, 0px, -5px, 200px, 3px, $orangecolor)
+
+.newcolors__cart-blocks
+	margin-top: 50px
+	position: relative
+	z-index: 1
+	display: grid
+	grid-template-columns: repeat(3, minmax(200px, 380px))
+	grid-template-rows: repeat(262px)
+	gap: 30px
+	&::after
+		content: ''
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
+		width: 100%
+		height: 1px
+		background-color: rgba(251, 224, 224, 1)
+	
+.newcolors__cart-item
+	position: relative
+.newcolors__cart-item
+	&:nth-child(2),
+	&:nth-child(5)
+		&::after
+			content: ''
+			position: absolute
+			right: 0
+			top: 2%
+			width: 1px
+			height: 96%
+			background-color: rgba(251, 224, 224, 1)
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 2%
+			width: 1px
+			height: 96%
+			background-color: rgba(251, 224, 224, 1)
+		
+.newcolors__item-block
+	padding: 20px
+	display: flex
+	flex-direction: column
+	-ms-flex-direction: column
+	justify-content: center
+	align-items: center
+	text-align: center
+.item-block__ico .item-bloc__ico-image
+	width: 50px
+	height: 50px
+.item-block__item-content
+	margin-top: 30px
+.item-block__item-content h3
+	@include myfont($textcolor, $rub, 18px, normal, 600, 27px, uppercase)
+
+.item-content__text
+	@include myfont($textcolor, $rub, 14px, normal, 400, 21px, none)
+	@include points(4)
+	
+// ************************
+// ************************
+// ************************
+
+@media (max-width: 769px)
+	.newcolors__cart-blocks
+		gap: 20px
+	.newcolors__item-block
+		padding: 0px 10px
+
+@media (max-width: 645px)
+	.newcolors__main-title
+		font-size: 28px
+		width: 100%
+	.newcolors__cart-blocks
+		grid-template-columns: repeat(2, minmax(200px, 380px))
+		-ms-grid-template-columns: repeat(2, minmax(200px, 380px))
+		grid-template-rows: repeat(262px)
+		gap: 30px
+	.newcolors__cart-blocks
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+			top: 0%
+			transform: translateY(0%)
+			-ms-transform: translateY(0%)
+			width: 100%
+			height: 1px
+			background-color: rgba(251, 224, 224, 0)
+	.newcolors__cart-item
+		&:nth-child(2),
+		&:nth-child(5)
+			&::after
+				content: ''
+				position: absolute
+				right: 0
+				top: 2%
+				width: 1px
+				height: 96%
+				background-color: rgba(251, 224, 224, 0)
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				top: 2%
+				width: 1px
+				height: 96%
+				background-color: rgba(251, 224, 224, 0)
+
+@media (max-width: 550px)
+	.newcolors__main-title
+		font-size: 24px
+		width: auto
+	.newcolors
+		margin-top: 50px
+	.newcolors__main-title
+		width: 100%
+		font-size: 24px
+@media (max-width: 450px)
+	.newcolors__cart-blocks
+		grid-template-columns: repeat(1, auto)
+		-ms-grid-template-columns: repeat(1, auto)
+		grid-template-rows: repeat(262px)
+		gap: 30px
+	.newcolors
+		margin-top: 30px
+		padding-left: 10px
+		padding-right: 10px
+	.newcolors__main-title
+		font-size: 20px
+	.item-block__item-content h3
+		font-size: 16px

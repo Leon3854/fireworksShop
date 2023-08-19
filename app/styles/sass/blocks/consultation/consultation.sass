@@ -1,0 +1,137 @@
+.order-consultation
+	margin-top: 50px
+	margin-bottom: 50px
+	width: 100%
+	height: auto
+	// background-size: cover
+	position: relative
+	z-index: 1
+	overflow: hidden
+
+.order-consultation__title
+	margin-top: 50px
+	width: 100%
+	height: auto
+	@include flex-center
+.order-consultation__name
+	max-width: 500px
+	min-width: 320px
+	text-align: center
+	h2
+		position: relative
+		@include myfont($whitecolor, $rub, 36px, normal, 600, normal, none)
+		&::after
+			content: ''
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			-ms-transform: translateX(-50%)
+			bottom: -10px
+			height: 3px
+			width: 200px
+			background-color: $orangecolor
+.order-consultation__advice
+	margin: 20px auto
+	max-width: 500px
+	min-width: 320px
+	display: flex
+	p
+		@include myfont($whitecolor, $rub, 14px, normal, 400, 21px, none)
+		text-align: center
+
+
+.order-consultation__form-contact
+	margin: 30px auto
+	max-width: 1000px
+	height: 67px
+.consultation-form__contact
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	width: 100%
+	height: 100%
+.form-contact__name,
+.form-contact__email,
+.form-contact__phone
+	width: 260px
+	display: flex
+	flex-direction: column
+	position: relative
+	z-index: 1
+.form-contact__email,
+.form-contact__phone
+	margin-left: 20px
+
+.contact-label__name,
+.contact-label__email,
+.contact-label__phone
+	@include myfont($graycolor, $rub, 14px, normal, 400, 21px, uppercase)
+
+.contact-input__name,
+.contact-input__email,
+.contact-input__phone
+	border: 1px solid $graycolor
+	background: $whitecolor
+	padding: 10px 15px
+	height: 41px
+	width: 260px
+	position: relative
+	&::placeholder
+		@include myfont(#999, $rub, 14px, normal, 400, 21px, none)
+.snow-input
+	position: absolute
+	z-index: 2
+	right: 0
+	top: 50%
+	transform: translateX(-50%)
+	-ms-transform: translateX(-50%)
+	color: $redcolor
+
+.form-contact__submit
+	border: none
+	margin-top: 20px
+	width: 160px
+	height: 44px
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-left: 20px
+	background-color: $redcolor
+	@include myfont($whitecolor, $rub, 12px, normal, 400, 21px, uppercase)
+	
+
+// ***************************
+// ***************************
+// ***************************
+
+@media (max-width: 1010px)
+	.order-consultation__form-contact
+		height: auto
+	.consultation-form__contact
+		justify-content: space-between
+	.form-contact__submit
+		margin-left: 0
+	.form-contact__email,
+	.form-contact__phone
+		margin-left: 0
+@media (max-width: 945px)
+	.order-consultation
+		background-size: cover
+	.consultation-form__contact
+		flex-direction: column
+		-ms-flex-direction: column
+		height: auto
+	.form-contact__name,
+	.form-contact__email,
+	.form-contact__phone
+		margin-top: 20px
+	.form-contact__submit
+		width: 260px
+	
+@media (max-width: 768px)
+	.order-consultation
+		margin-bottom: 0px
+		margin-top: 0
+		padding-bottom: 30px
+
+// @media (max-width: 768px)

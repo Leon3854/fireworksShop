@@ -1,0 +1,373 @@
+@mixin bloc-wrapper($position, $zindex, $width, $height, $top, $left, $transform, $bgcolor, $padding)
+	position: $position
+	z-index: $zindex
+	width: $width
+	height: $height
+	top: $top
+	left: $left
+	-ms-transform: $transform
+	transform: $transform
+	background-color: $bgcolor
+	padding: $padding
+	
+	
+.body-modal__window
+	background-color: rgba(0, 0, 0, 0.5)
+	width: 100%
+	height: 100%
+	position: absolute
+	z-index: 40
+	left: 0
+	top: 0
+	display: none
+
+.order-call__wrapper
+	@include bloc-wrapper(absolute, 41, 500px, auto, 10%, 50%, translateX(-50%), $graycolor, 50px)
+	display: none
+	z-index: 60
+.thanks-for-trust
+	@include bloc-wrapper(absolute, 41, 500px, auto, 15%, 50%, translateX(-50%), $graycolor, 50px)
+	display: none
+
+.order-call__title,
+.thanks-truns__title
+	@include myfont($textcolor, $rubikfont, 36px, normal, 600, normal, inherit)
+	text-align: center
+	position: relative
+	&::after
+		position: absolute
+		content: ''
+		background-color: $orangecolor
+		height: 3px
+		width: 50%
+		left: 25%
+		bottom: -6px
+.order-call__text,
+.thanks-trust__text
+	margin-top: 20px
+	text-align: center
+	color:#646469
+	font-family: $rubikfont
+	font-size: 14px
+	font-style: normal
+	font-weight: 400
+	line-height: 150%
+	@include points(3)
+
+.oredr-call__form
+	margin-top: 50px
+.call
+	@include myflex(column, flex-start)
+	position: relative
+.call__you-name
+	width: 100%
+.form-label__name,
+.form-label__number
+	width: 100%
+	color: #443E3E
+	font-family: $rubikfont
+	font-size: 14px
+	font-style: normal
+	font-weight: 400
+	line-height: 150%
+	text-transform: uppercase
+	position: relative
+.form-control__name,
+.form-control__number
+	border: 1px solid #ccc
+	padding: 10px 15px
+	margin-top: 5px
+	width: 100%
+	background-color: #fff
+	position: relative
+	&::placeholder
+		color: rgba(153, 153, 153, 1)
+		font-family: $rubikfont
+		font-size: 14px
+		font-style: normal
+		font-weight: 400
+		line-height: 150%
+.call__you-name,
+.call__your-number
+	position: relative
+.call__you-snow
+	position: absolute
+	color: red
+	right: 10px
+	top: 44px
+	z-index: 10
+.call__your-number,
+.send-order__call
+	margin-top: 30px
+.send-order__red-btn
+	@include btn-red
+	width: 100%
+.modal-circle
+	position: absolute
+	top: 0px
+	right: -35px
+	width: 25px
+	height: 25px
+	font-size: 20px
+	color: rgba(204, 204, 204, 1)
+	@include flex-center
+	cursor: pointer
+//********************************
+// *******************************
+// *******************************
+.thanks-waiting
+	text-align: center
+	margin-top: 30px
+	@include myfont(#443E3E, $rubikfont, 12px, normal, 400, normal, uppercase)
+//********************************
+// *******************************
+// *******************************
+.order-click__wrapper
+	@include bloc-wrapper(absolute, 41, 500px, auto, 10%, 50%, translateX(-50%), $graycolor, 50px)
+	display: none
+.order-click__title
+	@include myfont($textcolor, $rubikfont, 36px, normal, 600, normal, inherit)
+	text-align: center
+	position: relative
+	&::after
+		position: absolute
+		content: ''
+		background-color: $orangecolor
+		height: 3px
+		width: 50%
+		left: 25%
+		bottom: -6px
+.order-click__goods-card
+	margin-top: 30px
+	width: 100%
+	height: 86px
+	background-color: $whitecolor
+	padding: 10px
+	display: flex
+	justify-content: flex-start
+	align-items: top
+
+.goods-card__image
+	width: 70px
+	height: 70px
+.goods-card__content
+	margin-left: 10px
+.product-name
+	@include myfont($textcolor, $rubikfont, 14px, normal, 600, 21px, uppercase)
+	@include points(2)
+	padding-right: 10px
+.product__price-quantity
+	@include myfont(#646469, $rubikfont, 12px, normal, 400, 18px, uppercase)
+	@include points(1)
+.price-goods
+	@include myfont($textcolor, $rubikfont, 12px, normal, 700, 18px, uppercase)
+// *************************
+// *************************
+// *************************
+.cart-goods__wrapper
+	box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15)
+	position: absolute
+	right: 180px
+	top: 90px
+	z-index: 50
+	width: 400px
+	height: auto
+	display: none
+.cart-goods__wrap-wrap
+	position: relative
+	width: 400px
+	height: auto
+	padding-top: 30px
+	padding-bottom: 30px
+	background-color: $graycolor
+	&::before
+		position: absolute
+		content: ''
+		top: -39px
+		right: 40px
+		border: 20px solid transparent
+		border-bottom: 20px solid $graycolor
+.cart-goods__title
+	@include myfont($textcolor, $rubikfont, 18px, normal, 600, 27px, uppercase)
+	padding-left: 30px
+	padding-right: 30px
+.cart-goods__carts
+	padding-left: 30px
+	padding-right: 30px
+	margin-top: 20px
+	width: 100%
+	height: 240px
+	overflow: auto
+	&::-webkit-scrollbar
+		width: 3px
+	&::-webkit-scrollbar-track
+		background: $graycolor
+	&::-webkit-scrollbar-thumb
+		background: #FCCD05
+		height: 100px
+		width: 3px
+.cart-goods__block-goods
+	&:first-child
+		margin-top: 0
+.cart-goods__block-goods
+	background-color: $whitecolor
+	height: 86px
+	padding: 10px
+	position: relative
+	display: flex
+	margin-top: 20px
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: -10px
+		width: 100%
+		height: 1px
+		background-color: rgba(251, 224, 224, 1)
+.goods-card__content
+	position: relative
+.product-name
+	padding-right: 30px
+.cart-goods__close-circle
+	position: absolute
+	width: 25px
+	height: 25px
+	right: 0
+	top: 0
+	cursor: pointer
+	@include flex-center
+.goods__close
+	color: rgba(204, 204, 204, 1)
+
+.cart-goods__pay-result
+	margin-top: 30px
+	padding: 0 30px
+	@include myflex(row, space-between)
+.pay-result__text span
+	@include myfont(#646469, $rubikfont, 14px, normal, 400, 21px, capitalize)
+.pay-result__total-price span
+	@include myfont(#443E3E, $rubikfont, 18px, normal, 700, 27px, uppercase)
+
+.cart-goods__btns
+	margin-top: 40px
+	padding: 0 30px
+	display: flex
+	flex-direction: column
+	-ms-flex-direction: column
+	justify-content: center
+.cart-goods__into-cart,
+.cart-goods__order-checkout
+	width: 100%
+	border: none
+	padding: 15px 30px
+	text-transform: uppercase
+	font-family: $rubikfont
+	font-size: 12px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+.cart-goods__into-cart
+	border: 1px solid $redcolor
+	color: $redcolor
+.cart-goods__order-checkout
+	margin-top: 10px
+	background-color: $redcolor
+	color: $whitecolor
+// ***************************
+// ***************************
+
+.search-input__wrapper
+	max-width: 1602px
+	min-width: 320px
+	position: absolute
+	z-index: 41
+	top: 0%
+	width: 100%
+	height: 100px
+	background-color: $whitecolor
+	display: none
+.search__form
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+.search-form__input
+	border: none
+	width: 100%
+	height: auto
+	padding: 30px 60px
+	box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15)
+	&::placeholder
+		@include myfont(#999, $rub, 14px, normal, 400, 21px, inherit)
+.search-form__submit
+	border: 1px solid rgba(255, 255, 255, .0)
+	background-color: transparent
+	position: absolute
+	left: 0
+	font-size: 20px
+	color: #999
+	height: 84px
+	width: 60px
+.form-circle
+	position: absolute
+	right: 0
+	top: 50%
+	transform: translateY(-50%)
+	-ms-transform: translateY(-50%)
+	width: 40px
+	height: 90px
+	font-size: 20px
+	color: #999
+	display: flex
+	justify-content: center
+	align-items: center
+	cursor: pointer
+	transition: all ease .5s
+	&:hover
+		color: $redcolor
+
+
+// ***************************
+// ***************************
+@media (max-width: 625px)
+	.thanks-for-trust
+		top: 10%
+	.modal-circle
+		top: -30px
+		right: 0
+	
+@media (max-width: 600px)
+	.order-call__wrapper
+		width: 80%
+		height: auto
+		padding: 5%
+	.oredr-call__form
+		margin-top:20px
+	.call__your-number,
+	.send-order__call
+		margin-top: 20px
+	.order-call__title
+		font-size: 30px
+	.thanks-for-trust
+		width: 80%
+		padding: 5%
+	.thanks-truns__title
+		font-size: 30px
+	// ******************
+	.order-click__wrapper
+		width: 90%
+	.order-click__title
+		font-size: 24px
+@media (max-width: 400px)
+	.order-call__wrapper
+		width: 90%
+	.order-call__title
+		font-size: 24px
+	.modal-circle
+		top: -30px
+		right: 0
+	.order-call__text
+		@include points(5)
+	.thanks-truns__title
+		font-size: 24px
+
