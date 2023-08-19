@@ -1,13 +1,18 @@
 // USER VARIABLES SECTION
-
+$redcolor: rgba(232, 18, 18, 1)
+$graycolor: rgba(245, 245, 245, 1)
+$whitecolor: rgba(255, 255, 255, 1)
+$orangecolor: rgba(252, 205, 5, 1)
+$coralrcolor: rgba(251, 224, 224, 1)
 $accent: orange // Accent Color
 $fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
+$textcolor: #443E3E // Text Color
 $lineheight: 1.65 // Document Line Height
 $userfont: roboto-oh5, sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 $rubikfont: rubik, sans-serif 
 $futurafont: futura, sans-serif
+$rub: 'Rubik', sans-serif
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 30px
 $gutter: $grid-gutter-width
@@ -18,6 +23,7 @@ $gutter: $grid-gutter-width
 @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
 @import '../sass/blocks/slick/slick.scss'
 @import '../sass/blocks/slick/slick-theme.scss'
+// @import 'simplebar/dist/simplebar.css'
 // @import 'node_modules/bootstrap-icons/font/bootstrap-icons.scss' //
 // @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
 // @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
@@ -85,8 +91,8 @@ body
 	overflow-x: hidden
 
 .box
-	border: 2px solid green
-	max-width: 1600px
+	// border: 2px solid green
+	max-width: 1200px
 	min-width: 320px
 	margin: 0 auto
 
@@ -103,4 +109,48 @@ body
 	display: flex
 	justify-content: center
 	align-items: center
-
+// my mixins
+@mixin flex-center
+	display: flex
+	justify-content: center
+	align-items: center
+@mixin btn-red
+	border: none
+	padding: 15px 30px
+	background-color: $redcolor
+	color: $whitecolor
+	font-family: $rubikfont
+	font-size: 12px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+	text-transform: uppercase
+@mixin points($line)
+	overflow: hidden //Скрываем излишки контента
+	text-overflow: ellipsis //Добавляем троеточие
+	display: -webkit-box //Для Кросбраузероности
+	-webkit-line-clamp: $line // Количество строк
+	-webkit-box-orient: vertical //вертик
+@mixin myfont($textcolor, $family, $size, $style, $weight, $height, $transform)
+	color: $textcolor
+	font-family: $family
+	font-size: $size
+	font-style: $style
+	font-weight: $weight
+	line-height: $height
+	text-transform: $transform
+@mixin myflex($column, $start)
+	display: flex
+	-ms-flex-direction: $column
+	flex-direction: $column
+	justify-content: $start
+@mixin title-after($content,$absolute, $left, $bottom, $width, $height, $orangecolor)
+	content: $content
+	position: $absolute
+	left: $left
+	bottom: $bottom
+	width: $width
+	height: $height
+	background: $orangecolor
+	
+	

@@ -1,8 +1,12 @@
 // Import vendor jQuery plugin example
 // import "~/app/libs/mmenu/dist/mmenu.js";
-
+import $ from "jquery";
+import slick from "./slick/slick.min.js";
+import orderCall from "./moduls/orderCall.js";
+import searchForm from "./moduls/search.js";
 import icons from "./moduls/icons.js";
 import rating from "./moduls/rating.js";
+import mainSlider from "./moduls/mainSlider.js";
 document.addEventListener("DOMContentLoaded", () => {
   // Custom JS
   icons(".color-click-heart", ".ico-heart__border", ".ico-heart__fill");
@@ -12,4 +16,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   icons(".color-click-arrow", ".bg-arrow__left", ".bg-arrow__right");
   rating(".rating");
+  orderCall(
+    ".top-control",
+    ".body-modal__window",
+    ".order-call__wrapper",
+    ".modal-circle_circle",
+    ".send-order__red-btn",
+    ".thanks-for-trust"
+  );
+  searchForm(
+    ".block-search",
+    ".search-input__wrapper.animate__animated",
+    ".form-circle.animate__animated"
+  );
+  mainSlider(".slider-main__page");
 });

@@ -1,0 +1,72 @@
+.lets-acquainted
+	padding-top: 100px
+
+.lets-acquainted__content
+	margin-top: 50px
+
+.lets-acquainted__content-attention
+	margin: 0 auto
+	max-width: 700px
+	min-width: 320px
+
+.second__title
+	position: relative
+	@include myfont($textcolor, $rub, 36px, normal, 600, normal, none)
+	&::after
+		content: ''
+		position: absolute
+		left: 0
+		bottom: -5px
+		width: 28%
+		height: 3px
+		background: $orangecolor
+.lets-acquainted__text p
+	@include myfont($textcolor, $rub, 14px, normal, 400, 21px, none)
+	margin-top: 10px
+.lets-acquainted__attention
+	margin-top: 50px
+	background-color: $coralrcolor
+	padding: 30px
+.attention__title
+	@include myfont($textcolor, $rub, 18px, normal, 600, 27px, uppercase)
+.attention__list
+	margin-top: 10px
+@media (max-width: 700px)
+	.second__title
+		margin-left: 20px
+		&::after
+			width: 240px
+	.lets-acquainted__text
+		p
+			padding-left: 20px
+			padding-right: 20px
+			text-align: justify
+			&:first-child
+				margin-top: 30px
+@media (max-width: 426px)
+	.second__title
+		font-size: 24px
+		margin-left: 20px
+		&::after
+			width: 140px
+	.lets-acquainted__text
+		p
+			padding-left: 20px
+			padding-right: 20px
+			text-align: justify
+			&:first-child
+				margin-top: 30px
+	.attention__title
+		font-size: 16px
+
+@media (max-width: 321px)
+	.lets-acquainted
+		padding-top: 50px
+	.lets-acquainted__content
+		margin-top: 30px
+	.second__title
+		font-size: 18px
+		margin-left: 20px
+		padding-right: 20px
+		&::after
+			width: 160px
