@@ -1,0 +1,210 @@
+.reviews
+	border: 2px solid green
+	padding-top: 100px
+
+.reviews__main-title
+	width: 100%
+	h2
+		position: relative
+		width: 100%
+		@include myfont($textcolor, $rub, 36px, normal, 600, normal, none)
+		&::after
+			@include title-after('',absolute, 0px, -5px, 200px, 3px, $orangecolor)
+
+.reviews__content
+	margin-top: 50px
+	@include myflex(row, space-between)
+.reviews-content__left
+	width: 210px
+	height: auto
+.reviews-yandex__starts
+	position: relative
+.stars__name-company
+	width: 100%
+.reviews-shops
+	margin-top: 10px
+	text-align: center
+.reviews-quantity
+	@include myfont($textcolor, $rub, 14px, normal, 700, 21px, none)
+.abaout-shop
+	@include myfont($textcolor, $rub, 14px, normal, 400, 21px, none)
+.reviews-reiting__stars
+	margin-top: 10px
+.rating.rating_set
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 20px
+.rating-active__value-max
+	display: flex
+	justify-content: flex-start
+
+// ***********************
+// ***********************
+// Stars Reating *********
+.rating
+	display: flex
+	align-items: flex-end
+	font-size: 20px
+	line-height: 0.75
+
+.rating__body
+	position: relative
+.rating__body::before
+	content: '★★★★★'
+	display: block
+	color: rgba(253, 239, 182, 1)
+.rating__active
+	position: absolute
+	width: 0%
+	height: 100%
+	top: 0
+	left: 0
+	overflow: hidden
+.rating__active::before
+	content: '★★★★★'
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	color: #ffd300
+
+.rating__items
+	display: flex
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+
+.rating__item
+	flex: 0 0 20%
+	height: 100%
+	opacity: 0
+.rating__value
+	@include myfont($orangecolor, $rub, 14px, normal, 700, 21px, none)
+	padding: 0 0 0 10px
+.rating-active__value-max
+	margin-top: 4px
+	@include myfont($orangecolor, $rub, 14px, normal, 700, 21px, none)
+.slash-gray
+	@include myfont(#999, $rub, 14px, normal, 400, 21px, none)
+.rating__max-value
+	@include myfont(#999, $rub, 14px, normal, 400, 21px, none)
+
+.reviews-google__starts
+	margin-top: 40px
+
+// ******************
+.reviews-content__right
+	width: 890px
+
+.reviews-customer__reviews
+	@include myflex(row, space-between)
+	padding-top: 30px
+	padding-bottom: 30px
+	border-bottom: 1px solid $coralrcolor
+	&:first-child
+		padding-top: 0
+	&:last-child
+		padding-bottom: 0
+		border-bottom: none
+
+.reviews-customer__name-date
+	width: 300px
+	height: 57px
+.customer__name-date
+	display: flex
+	justify-content: space-between
+	align-items: center
+.customer__name
+	@include myfont($textcolor, $rub, 18px, normal, 600, 27px, none)
+	@include points(1)
+.customer__date
+	@include myfont(#999, $rub, 14px, normal, 400, 21px, none)
+	@include points(1)
+.customer__rating
+	margin-top: 10px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.rating.rating_set.reviews-customers__rating-left
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.reviews-customer__review-text
+	width: 540px
+	@include myfont($textcolor, $rub, 14px, normal, 400, 21px, none)
+	@include points(4)
+
+.reviews__content-btn
+	margin: 40px 0
+	display: flex
+	justify-content: center
+	align-items: center
+.btn-outline-primary
+	@include btn-btn($redcolor, #fff, $redcolor, $rub, 12px, uppercase)
+
+
+// ***************************
+// ***************************
+// ***************************
+@media (max-width: 992px)
+	.reviews-customer__review-text
+		padding: 0 10px
+		width: 440px
+
+@media (max-width: 886px)
+	.reviews-content__right
+		width: 540px
+
+@media (max-width: 768px)
+	.reviews__content
+		flex-direction: column
+	.reviews-content__left
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+	.reviews-google__starts
+		margin-top: 0px
+	.reviews
+		padding: 30px 10px 0 10px
+	.reviews__main-title
+		h2
+			font-size: 28px
+			&::after
+				width: 160px
+	.reviews-customer__review-text
+		padding: 0 10px
+		width: 300px
+	.reviews-customer__reviews
+		justify-content: flex-start
+	.reviews-content__right
+		margin-top: 40px
+		width: auto
+
+@media (max-width: 604px)
+	.reviews-content__right
+		width: 100%
+	.reviews-customer__reviews
+		flex-direction: column
+		-ms-flex-direction: column
+		width: 100%
+	.reviews-customer__name-date
+		width: 100%
+		padding-right: 10px
+	.reviews-customer__review-text
+		padding-top: 10px
+		width: 100%
+	
+@media (max-width: 425px)
+	.reviews__main-title
+		h2
+			font-size: 24px
+			&::after
+				width: 134px
+	
+	
