@@ -125,6 +125,18 @@ body
 	font-weight: 400
 	line-height: normal
 	text-transform: uppercase
+@mixin btn-btn($bgcolor, $bordercolor, $fontcolor, $font, $fontsize, $non)
+	border: 1px solid $bgcolor
+	padding: 15px 30px
+	background-color: $bordercolor
+	color: $fontcolor
+	font-family: $font
+	font-size: $fontsize
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+	text-transform: $non
+	
 @mixin points($line)
 	overflow: hidden //Скрываем излишки контента
 	text-overflow: ellipsis //Добавляем троеточие
