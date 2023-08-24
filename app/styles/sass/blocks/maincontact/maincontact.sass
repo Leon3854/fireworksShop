@@ -1,0 +1,120 @@
+.mainpage-contact
+	padding-top: 100px
+
+.main-page.contact__content
+	margin-top: 40px
+	@include myflex(row, space-between)
+
+.contact__contect
+	width: 300px
+	height: auto
+
+.information-for-custom,
+.information-about-co
+	@include myfont($textcolor, $rub, 16px, normal, 700, 24px, none)
+	@include points(1)
+.contact__small-text,
+.ofical-name-company
+	margin-top: 10px
+	@include myfont(#646469, $rub, 14px, normal, 400, 21px, none)
+	@include points(3)
+	
+.contact-information
+	padding-bottom: 30px
+	border-bottom: 1px solid $coralrcolor
+.contact-phone,
+.contact-email,
+.contact-geo
+	margin-top: 30px
+	@include myflex(row, flex-start)
+	align-items: center
+	width: 230px
+	height: 50px
+
+.contact-phone__icon,
+.contact-email__icon,
+.contact-geo__icon
+	width: 40px
+	height: 40px
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 24px
+	color: $redcolor
+.contact-phon__number,
+.contact-email__email,
+.contact-geo__link-shop
+	margin-left: 10px
+.contacts-number,
+.contact-email__email a
+	position: relative
+	@include myfont($textcolor, $rub, 16px, normal, 700, 24px, none)
+	@include points(3)
+	text-decoration: underline
+.contact-geo__link-shop a
+	position: relative
+	@include myfont($textcolor, $rub, 16px, normal, 400, 24px, none)
+	@include points(3)
+	text-decoration: underline
+.days-work
+	margin-top: 5px
+	@include myfont(#646469, $rub, 12px, normal, 400, 21px, none)
+	@include points(1)
+.information-about-co
+	margin-top: 30px
+.ofical-name-company
+	margin-top: 10px
+
+.main-contect__online-map
+	width: 800px
+	height: 400px
+	position: relative
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		left: 3%
+		bottom: 6px
+		background-color: $textcolor
+		box-shadow: 0px 1px 20px 10px rgba(0, 0, 0, .4)
+		width: 94%
+		height: 20px
+		z-index: -1
+
+
+@media (max-width: 1100px)
+	.main-contect__online-map
+		width: 700px
+
+@media (max-width: 1008px)
+	.contact-phone,
+	.contact-email,
+	.contact-geo
+		margin-top: 20px
+	.contact-information
+		padding-bottom: 10px
+	.information-about-co
+		margin-top: 10px
+	.main-contect__online-map
+		width: 600px
+@media (max-width: 769px)
+	.mainpage-contact
+		padding-top: 50px
+		padding-left: 10px
+		padding-right: 10px
+		padding-bottom: 30px
+	.main-page.contact__content
+		@include myflex(column, flex-start)
+	.contact__contect
+		width: 100%
+	.main-contect__online-map
+		margin-top: 20px
+		width: 100%
+
+@media (max-width: 426px)
+	.mainpage-contact
+		padding-left: 10px
+		padding-right: 10px
+		padding-bottom: 30px
+	
+	
