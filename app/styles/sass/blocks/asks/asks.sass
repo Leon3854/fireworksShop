@@ -1,0 +1,82 @@
+.often-asked-asks
+	padding-top: 100px
+
+
+.asked-asks__accardion
+	margin-top: 50px
+	width: 100%
+	height: auto
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+
+
+.accordion
+	width: 700px
+	margin-top: 20px
+	&:first-child
+		margin-top: 0
+.accordion__control
+	background-color: #fff
+	padding: 20px 30px
+	border: 1px solid #a3a3a3
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: auto
+	width: 100%
+	list-style-type: none
+	transition: all ease .5s
+	-ms-transition: all ease .5s
+.accordion__title
+	transition: all ease .5s
+	@include myfont($textcolor, $rub, 14px, normal, 700, 21px, uppercase)
+.accordion__icon
+	transition: all ease 1s
+	border: 1px solid rgba(0,0,0,0)
+	border-radius: 50%
+	width: 30px
+	height: 30px
+.accordion__control:hover .accordion__title
+	color: $redcolor
+.accordion__control:hover .accordion__icon
+	background-color: $redcolor
+	color: $whitecolor
+.accordion__content
+	padding: 0px 30px
+	background-color: rgba(253, 239, 182, 1)
+	max-height: 0
+	opacity: 0
+	overflow: hidden
+	will-change: max-height
+	transition: all ease-out .5s
+	box-sizing: content-box
+	@include points(6)
+	
+.accordion__control.active
+	border: none
+	background-color: rgba(253, 239, 182, 1)
+.accordion__control.active .accordion__icon
+	transform: rotate(180deg)
+	background-color: #fff
+.accordion__control:hover.active .accordion__icon
+	background-color: $redcolor
+.accordion__content.active
+	opacity: 1
+	padding: 20px 30px
+
+@media (max-width: 710px)
+	.accordion
+		width: 100%
+
+@media (max-width: 426px)
+	.often-asked-asks
+		padding-top: 50px
+		padding-left: 10px
+		padding-right: 10px
+	.asked-asks__title h2
+		font-size: 24px
+	.asked-asks__accardion
+		margin-top: 30px
