@@ -7,6 +7,9 @@
 	z-index: 1
 .control-line__main-nav
 	height: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
 .main-nav__list
 	height: 100%
 	width: 100%
@@ -40,4 +43,40 @@
 	transition: all ease .5s
 .main-nav__link:hover .nav-catalog
 	color: $redcolor
+
+// ****************************
+// ****************************
+.catalog-nav__btn,
+.navigation-page__btn
+	transition: all ease .5s
+	opacity: 0
+	display: none
+@media (max-width: 1035px)
+	.main-nav__link
+		padding: 0 10px
+@media (max-width: 951px)
+	.main-nav__list
+		display: none
+	.control-line__main-nav
+		padding-left: 10px
+		padding-right: 10px
+	.catalog-nav__btn,
+	.navigation-page__btn
+		opacity: 1
+		cursor: pointer
+		border: none
+		background: none
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 50px
+		padding: 0 30px
+		span
+			color: $whitecolor
+@media (max-width: 610px)
+	.catalog-nav__btn
+		opacity: 0
+	.red-line
+		display: none
+
 

@@ -1,12 +1,15 @@
 const mainSlider = function (triggerSlider) {
   trigger = document.querySelectorAll(triggerSlider);
   $(trigger).slick({
+    autoplay: true,
+    autoplaySpeed: 3500,
+    speed: 2000,
     dots: true,
     arrows: true,
     prevArrow:
-      '<button type="button" class="slider-main__page slick-prev"><i class="bi bi-arrow-left slider-main__left"></i></button>',
+      '<button type="button" class="slick-prev top-slider__left"><i class="bi bi-arrow-left"></i></button>',
     nextArrow:
-      '<button type="button" class="slider-main__page slick-next"><i class="bi bi-arrow-right slider-main__right"></i></button>',
+      '<button type="button" class="slick-next top-slider__right"><i class="bi bi-arrow-right"></i></button>',
   });
 };
 export default mainSlider;
