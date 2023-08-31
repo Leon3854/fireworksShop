@@ -22,7 +22,7 @@
 	display: none
 
 .order-call__wrapper
-	@include bloc-wrapper(absolute, 41, 500px, auto, 10%, 50%, translateX(-50%), $graycolor, 50px)
+	@include bloc-wrapper(absolute, 41, 500px, auto, 2%, 50%, translateX(-50%), $graycolor, 50px)
 	display: none
 	z-index: 60
 .thanks-for-trust
@@ -277,7 +277,7 @@
 // ***************************
 
 .search-input__wrapper
-	max-width: 1602px
+	max-width: 100%
 	min-width: 320px
 	position: absolute
 	z-index: 41
@@ -370,4 +370,49 @@
 		@include points(5)
 	.thanks-truns__title
 		font-size: 24px
+
+// ******************************
+// **********************  navigation modal
+// **************************
+.navigation-modal
+	width: 0px
+	height: auto
+	position: absolute
+	z-index: 10
+	right: 0px
+	top: 0px
+	transition: all ease .5s
+	overflow: hidden
+.navigation-modal.active
+	right: 0px
+	background-color: rgba(0,0,0, .3)
+	width: 100%
+	height: 100%
+	top: 0
+	position: absolute
+	z-index: 50
+	transition: all ease .5s
+.sidebar-menu
+	padding: 10px 20px
+	background-color: #fff
+	width: 200px
+	position: absolute
+	z-index: 51
+	right: 0
+	top: 150px
+	height: auto
+.sidebar-item
+	border-bottom: 1px solid rgba(0, 0, 0, .1)
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	&:last-child
+		border-bottom: none
+.sidebar-link
+	padding: 20px 0
+	width: 100%
+	height: 100%
+	@include myfont($textcolor, $rub, 14px, normal, 400, 21px, uppercase)
+
 
