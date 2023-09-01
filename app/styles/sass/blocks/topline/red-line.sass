@@ -63,7 +63,11 @@
 	transition: all ease .5s
 	opacity: 0
 	visibility: hidden
-.dropdown-item:not(:last-child)
+.dropdown-item,
+.drop-sub__item
+	transition: all ease .5s
+.dropdown-item:not(:last-child),
+.drop-sub__item:not(:last-child)
 	position: relative
 	&::before
 		position: absolute
@@ -89,20 +93,62 @@
 	visibility: visible
 	opacity: 1
 	transition: all ease .5s
+.main-nav__item:hover .dropdown-item:hover
+	background-color: #fff
+	border-left: 1px solid $redcolor
+	border-right: 1px solid $redcolor
+.main-nav__item:hover .dropdown-item:hover .dropdown-link
+	color: $redcolor
+.dropdown-item:hover .drop-sub__link
+	color: $redcolor
+.dropdown-item:hover .drop-sub__item:hover
+	background-color: #fff
+	border-left: 1px solid $redcolor
+	border-right: 1px solid $redcolor
+.dropdown-item:hover .drop-sub__item:hover .drop-sub__link
+	color: $whitecolor
 
 
-
-
-.dropdown-link
-	padding: 5px 20px
+.dropdown-link,
+.drop-sub__link
+	padding: 10px 20px
 	width: 100%
 	height: auto
 	display: block
-	@include myfont($textcolor, $rub, 14px, normal, 400, 21px, uppercase)
+	@include myfont($whitecolor, $rub, 14px, normal, 400, 21px, uppercase)
+	transition: all ease .5s
 
+.drop-submenu
+	width: 300px
+	position: absolute
+	background-color: $redcolor
+	z-index: -2
+	left: 0%
+	top: 0%
+	padding: 0px
+	display: block
+	transition: all ease .5s
+	opacity: 0
+	visibility: hidden
 
+.dropdown-item:hover .drop-submenu
+	visibility: visible
+	opacity: 1
+	transition: all ease .5s
+	left: 100%
+	// z-index: 2
+.main-nav__item:hover .dropdown-list:hover .dropdown-item:hover .drop-sub__item .drop-sub__link
+	color: $whitecolor
+.main-nav__item:hover .dropdown-list:hover .dropdown-item:hover .drop-sub__item:hover .drop-sub__link
+	color: $redcolor
 
-
+.dropdown-link
+	display: flex
+	justify-content: space-between
+	align-items: center
+	position: relative
+.submenu-arrow
+	transform: rotate(-90deg)
 
 // ****************************
 // ****************************
