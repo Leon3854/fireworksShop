@@ -1,449 +1,453 @@
-.box-goods
-	border: 1px solid tomato
-	padding: 20px
-	width: 1200px
-	margin: 0 auto
-.card-goodes__items
-	display: flex
-	justify-content: flex-start
-.card-goods__item
-	width: 285px
-	min-height: 413px
-	background-color: #fff
-	padding: 20px
-	transition: all ease .5s
-	position: relative
-	z-index: 1
-	&::before
-		position: absolute
-		content: ''
-		right: 0
-		top: 5%
-		width: 1%
-		height: 90%
-		background: rgba(251, 224, 224, 1)
-	&::after
-		position: absolute
-		content: ''
-		left: 0
-		bottom: 0
-		width: 100%
-		height: 1px
-		background: rgba(251, 224, 224, 1)
-.card-goods__item:hover .screen-carausel
-	opacity: 1
-	visibility: visible
-// *********************
-// *********************
-.screensaver
-	position: relative
-	z-index: 2
-	width: 100%
-	height: 240px
-// ********************
-// ********************
-.screen-carausel
-	transition: all ease .5s
-	visibility: hidden
-	opacity: 0
-	position: absolute
-	left: 0
-	top: 0px
-	width: 100%
-	height: 240px
-	background-color: #fff
-.goods-pagination
-	background: #000
-	width: 10px
-	height: 10px
+// .box-goods
+// 	border: 1px solid tomato
+// 	padding: 20px
+// 	width: 1200px
+// 	margin: 0 auto
+// .card-goodes__items
+// 	display: flex
+// 	justify-content: flex-start
+// .card-goods__item
+// 	width: 285px
+// 	min-height: 413px
+// 	background-color: #fff
+// 	padding: 20px
+// 	transition: all ease .5s
+// 	position: relative
+// 	z-index: 1
+// 	&::before
+// 		position: absolute
+// 		content: ''
+// 		right: 0
+// 		top: 5%
+// 		width: 1%
+// 		height: 90%
+// 		background: rgba(251, 224, 224, 1)
+// 	&::after
+// 		position: absolute
+// 		content: ''
+// 		left: 0
+// 		bottom: 0
+// 		width: 100%
+// 		height: 1px
+// 		background: rgba(251, 224, 224, 1)
+// .card-goods__item:hover .screen-carausel
+// 	opacity: 1
+// 	visibility: visible
+// 	z-index: 20
+// // *********************
+// // *********************
+// .screensaver
+// 	position: relative
+// 	z-index: 2
+// 	width: 100%
+// 	height: 240px
+// // ********************
+// // ********************
+// .screen-carausel
+// 	transition: all ease .5s
+// 	visibility: hidden
+// 	opacity: 0
+// 	position: absolute
+// 	left: 0
+// 	top: 0px
+// 	width: 100%
+// 	height: 240px
+// 	background-color: #fff
+// .goods-pagination
+// 	background: #000
+// 	width: 10px
+// 	height: 10px
 
-//**************************
-// *************************
-// *************************
-	.card-goods__slider
-	width: 244px
-	height: 240px
+// //**************************
+// // *************************
+// // *************************
+// 	.card-goods__slider
+// 	width: 244px
+// 	height: 240px
 
-.card-goods__slide
-	width: 320px
-	height: 200px
-	background-color: #fff
+// .card-goods__slide
+// 	width: 320px
+// 	height: 200px
+// 	background-color: #fff
 
-.card-goods__slider .slick-dots
-	position: absolute
-	left: 0
-	bottom: 0
+// .card-goods__slider .slick-dots
+// 	position: absolute
+// 	left: 0
+// 	bottom: 0
 
-.slick-dots li button
-	opacity: 0
-.card-goods__slider .slick-dots li
-	background: rgba(204, 204, 204, 1)
-	height: 3px
-	width: 20%
+// .slick-dots li button
+// 	opacity: 0
+// .card-goods__slider .slick-dots li
+// 	background: rgba(204, 204, 204, 1)
+// 	height: 3px
+// 	width: 20%
 		
-.card-goods__slider .slick-dots li.slick-active
-	background: rgba(252, 205, 5, 1)
+// .card-goods__slider .slick-dots li.slick-active
+// 	background: rgba(252, 205, 5, 1)
 
 
-.main-slider_carousel-block.slick-next.slick-arrow
-	position: absolute
-	right: 10px
-	width: 30px
-	height: 30px
-	border-radius: 50%
-	transition: all ease .5s
-.card-goods__right
-	position: absolute
-	width: 30px
-	height: 30px
-	border-radius: 50%
-	z-index: 10
-	right: 0
-	top: -25%
-	font-size: 16px
-	color: #000
-	display: flex
-	justify-content: center
-	align-items: center
-	transition: all ease .5s
-	&:hover
-		background: rgba(232, 18, 18, 1)
-		color: #fff
-.main-slider_carousel-block.slick-prev.slick-arrow
-	z-index: 10
-	position: absolute
-	left: 10px
-	width: 30px
-	height: 30px
-	transition: all ease .5s
-.card-goods__left
-	position: absolute
-	width: 30px
-	height: 30px
-	border-radius: 50%
-	z-index: 10
-	left: 0
-	top: -25%
-	font-size: 16px
-	color: #000
-	display: flex
-	justify-content: center
-	align-items: center
-	transition: all ease .5s
-	&:hover
-		background: rgba(232, 18, 18, 1)
-		color: #fff
+// .main-slider_carousel-block.slick-next.slick-arrow
+// 	position: absolute
+// 	z-index: 3
+// 	right: 10px
+// 	width: 30px
+// 	height: 30px
+// 	border-radius: 50%
+// 	transition: all ease .5s
+// .card-goods__right
+// 	position: absolute
+// 	z-index: 4
+// 	width: 30px
+// 	height: 30px
+// 	border-radius: 50%
+// 	z-index: 10
+// 	right: 0
+// 	top: -25%
+// 	font-size: 16px
+// 	color: #000
+// 	display: flex
+// 	justify-content: center
+// 	align-items: center
+// 	transition: all ease .5s
+// 	&:hover
+// 		background: rgba(232, 18, 18, 1)
+// 		color: #fff
+// .main-slider_carousel-block.slick-prev.slick-arrow
+// 	z-index: 5
+// 	position: absolute
+// 	left: 10px
+// 	width: 30px
+// 	height: 30px
+// 	transition: all ease .5s
+// .card-goods__left
+// 	position: absolute
+// 	z-index: 6
+// 	width: 30px
+// 	height: 30px
+// 	border-radius: 50%
+// 	z-index: 10
+// 	left: 0
+// 	top: -25%
+// 	font-size: 16px
+// 	color: #000
+// 	display: flex
+// 	justify-content: center
+// 	align-items: center
+// 	transition: all ease .5s
+// 	&:hover
+// 		background: rgba(232, 18, 18, 1)
+// 		color: #fff
 
 
-// **********************
-// **********************
-// **********************
-.card-icon__heart
-	display: inline-block
-	position: absolute
-	z-index: 3
-	right: 0
-	top: 0
-	width: 19px
-	height: 17px
-	margin: 0
-	padding: 0
-	transition: all ease .5s
-	cursor: pointer
-	font-size: 16px
-.goods__border
-	position: absolute
-	z-index: 5
-	right: 0
-	top: -6px
-	opacity: 0
-	visibility: hidden
-	cursor: pointer
-	transition: all ease .5s
-.card-icon__heart > .goods__border:hover
-	color: rgba(232, 18, 18, 1)
-.goods__fill
-	position: absolute
-	z-index: 4
-	right: 0
-	top: -6px
-	opacity: 0
-	visibility: hidden
-	transition: all ease .5s
-	&:hover
-		color: rgba(232, 18, 18, 1)
-.goods__border.is-active
-	opacity: 1
-	visibility: visible
-.goods__fill.is-active
-	opacity: 1
-	visibility: visible
+// // **********************
+// // **********************
+// // **********************
+// .card-icon__heart
+// 	display: inline-block
+// 	position: absolute
+// 	z-index: 3
+// 	right: 0
+// 	top: 0
+// 	width: 19px
+// 	height: 17px
+// 	margin: 0
+// 	padding: 0
+// 	transition: all ease .5s
+// 	cursor: pointer
+// 	font-size: 16px
+// .goods__border
+// 	position: absolute
+// 	z-index: 5
+// 	right: 0
+// 	top: -6px
+// 	opacity: 0
+// 	visibility: hidden
+// 	cursor: pointer
+// 	transition: all ease .5s
+// .card-icon__heart > .goods__border:hover
+// 	color: rgba(232, 18, 18, 1)
+// .goods__fill
+// 	position: absolute
+// 	z-index: 4
+// 	right: 0
+// 	top: -6px
+// 	opacity: 0
+// 	visibility: hidden
+// 	transition: all ease .5s
+// 	&:hover
+// 		color: rgba(232, 18, 18, 1)
+// .goods__border.is-active
+// 	opacity: 1
+// 	visibility: visible
+// .goods__fill.is-active
+// 	opacity: 1
+// 	visibility: visible
 
-//*******************
-//*******************
-.card-add__trends
-	display: inline-block
-.card-add__list
-	display: flex
-	flex-direction: column
-	justify-content: flex-start
-	align-items: start
-.card-add__item
-	padding: 5px 10px
-	margin-top: 10px
-	display: flex
-	justify-content: center
-	align-items: center
-	&:first-child
-		margin-top: 0
-	span
-		margin-left: 10px
-		font-family: 'Rubik', sans-serif
-		font-size: 12px
-		font-style: normal
-		font-weight: 400
-		line-height: normal
-		text-transform: uppercase
+// //*******************
+// //*******************
+// .card-add__trends
+// 	display: inline-block
+// .card-add__list
+// 	display: flex
+// 	flex-direction: column
+// 	justify-content: flex-start
+// 	align-items: start
+// .card-add__item
+// 	padding: 5px 10px
+// 	margin-top: 10px
+// 	display: flex
+// 	justify-content: center
+// 	align-items: center
+// 	&:first-child
+// 		margin-top: 0
+// 	span
+// 		margin-left: 10px
+// 		font-family: 'Rubik', sans-serif
+// 		font-size: 12px
+// 		font-style: normal
+// 		font-weight: 400
+// 		line-height: normal
+// 		text-transform: uppercase
 
-.card-add__item.tend-new.is-active,
-.card-add__item.trend-hit.is-active,
-.card-add__item.trend-recommen.is-active,
-.card-add__item.trend-sale.is-active
-	display: inline-block
-.card-add__item.tend-new,
-.card-add__item.trend-hit,
-.card-add__item.trend-recommen,
-.card-add__item.trend-sale
-	display: none
+// .card-add__item.tend-new.is-active,
+// .card-add__item.trend-hit.is-active,
+// .card-add__item.trend-recommen.is-active,
+// .card-add__item.trend-sale.is-active
+// 	display: inline-block
+// .card-add__item.tend-new,
+// .card-add__item.trend-hit,
+// .card-add__item.trend-recommen,
+// .card-add__item.trend-sale
+// 	display: none
 	
-.card-add__item.tend-new
-	background-color: rgba(71, 142, 204, 1)
-	color: #fff
-.card-add__item.trend-hit
-	background-color: #FCCD05
-.card-add__item.trend-recommen
-	background-color: rgba(105, 160, 66, 1)
-	color: #fff
-.card-add__item.trend-sale
-	background-color: rgba(232, 18, 18, 1)
-	color: #fff
-//*********************************
-//*********************************
-//*********************************
-.card-goods__btn-video
-	margin-top: 10px
-	display: flex
-	justify-content: center
-//*********************************
-//*********************************
-//*********************************
-.card-goods__title
-	margin-top: 10px
-	width: 100%
-.card-goods__title h4
-	color: #443E3E
-	font-family: 'Rubik', sans-serif
-	font-size: 14px
-	font-style: normal
-	font-weight: bold
-	line-height: 150% 
-	text-transform: uppercase
+// .card-add__item.tend-new
+// 	background-color: rgba(71, 142, 204, 1)
+// 	color: #fff
+// .card-add__item.trend-hit
+// 	background-color: #FCCD05
+// .card-add__item.trend-recommen
+// 	background-color: rgba(105, 160, 66, 1)
+// 	color: #fff
+// .card-add__item.trend-sale
+// 	background-color: rgba(232, 18, 18, 1)
+// 	color: #fff
+// //*********************************
+// //*********************************
+// //*********************************
+// .card-goods__btn-video
+// 	margin-top: 10px
+// 	display: flex
+// 	justify-content: center
+// //*********************************
+// //*********************************
+// //*********************************
+// .card-goods__title
+// 	margin-top: 10px
+// 	width: 100%
+// .card-goods__title h4
+// 	color: #443E3E
+// 	font-family: 'Rubik', sans-serif
+// 	font-size: 14px
+// 	font-style: normal
+// 	font-weight: bold
+// 	line-height: 150% 
+// 	text-transform: uppercase
 
-// *******************************
-// *******************************
-// *******************************
-.product-available
-	margin-top: 10px
-.available__item
-	display: none
-.available__item.is-active
-	display: block
-	span
-		margin-top: 2px
-		margin-left: 10px
-		color: rgba(100, 100, 105, .6)
-		font-family: 'Rubik', sans-serif
-		font-size: 12px
-		font-style: normal
-		font-weight: 400
-		line-height: normal
-.item-available
-	display: flex
-	justify-content: flex-start
-	align-items: center
-	height: 14px
-.dots.have-more .ico-dot
-	background-color: rgba(105, 160, 66, 1)
-.dots.may-not-be .ico-dot
-	background-color: rgba(245, 128, 32, 1)
-.dots.dont-have .ico-dot
-	background-color: rgba(232, 18, 18, 1)
-.dots.have-more .ico-dot,
-.dots.dont-have .ico-dot,
-.dots.may-not-be .ico-dot
-	width: 10px
-	height: 10px
-	display: inline-block
-	border-radius: 50%
+// // *******************************
+// // *******************************
+// // *******************************
+// .product-available
+// 	margin-top: 10px
+// .available__item
+// 	display: none
+// .available__item.is-active
+// 	display: block
+// 	span
+// 		margin-top: 2px
+// 		margin-left: 10px
+// 		color: rgba(100, 100, 105, .6)
+// 		font-family: 'Rubik', sans-serif
+// 		font-size: 12px
+// 		font-style: normal
+// 		font-weight: 400
+// 		line-height: normal
+// .item-available
+// 	display: flex
+// 	justify-content: flex-start
+// 	align-items: center
+// 	height: 14px
+// .dots.have-more .ico-dot
+// 	background-color: rgba(105, 160, 66, 1)
+// .dots.may-not-be .ico-dot
+// 	background-color: rgba(245, 128, 32, 1)
+// .dots.dont-have .ico-dot
+// 	background-color: rgba(232, 18, 18, 1)
+// .dots.have-more .ico-dot,
+// .dots.dont-have .ico-dot,
+// .dots.may-not-be .ico-dot
+// 	width: 10px
+// 	height: 10px
+// 	display: inline-block
+// 	border-radius: 50%
 
-// ***************************
-// ***************************
-// ***************************
-.product-actual__price
-	margin-top: 20px
-	display: flex
-	justify-content: center
-	align-items: center
-.actual-price__list
-	display: flex
-	justify-content: start
-.actual-price__item
-	margin-left: 10px
-	height: 27px
-	position: relative
-	&:first-child
-		margin-left: 0
-.price
-	color: rgba(153, 153, 153, 1)
-	ont-family: 'Rubik', sans-serif
-	font-size: 18px
-	font-style: normal
-	font-weight: 400
-	line-height: 150%
-	text-decoration-line: strikethrough
-	text-transform: uppercase
-	position: relative
-.price.not-actuale
-	&::before
-		position: absolute
-		content: ''
-		left: 0
-		top: 50%
-		width: 100%
-		height: 1px
-		background-color: rgba(153, 153, 153, 1)
-.price.actuale
-	color: rgba(232, 18, 18, 1)
-	font-weight: bold
-// **********************
-// **********************
-// **********************
-.card-goods__item:hover .goods-item__footer
-	opacity: 1
-.goods-item__footer
-	transition: opacity .5s ease
-	opacity: 0
-	width: 100%
-	height: 100px
-	position: absolute
-	z-index: 4
-	left: 0
-	bottom: -94px
-	background-color: #fff
-.product-detail
-	margin-top: 20px
-	padding-left: 20px
-	padding-right: 20px
-.wiped-out,
-.caliber,
-.duration
-	color: #646469
-	font-family: 'Rubik', sans-serif
-	font-size: 12px
-	font-style: normal
-	font-weight: 400
-	line-height: normal
-	& span
-		margin-left: 10px
-		color: #443E3E
-		font-family: 'Rubik', sans-serif
-		font-size: 12px
-		font-style: normal
-		font-weight: bolder
-		line-height: normal
-.caliber, .duration
-	margin-top: 10px
-// ************************
-// ************************
-// ************************
-.product-btn-incar
-	margin-top: 20px
-.product-btn-incar
-	display: flex
-	justify-content: space-between
-	width: 100%
-	height: 44px
-.quantity-goods
-	width: 155px
-	height: 100%
-	display: flex
-	justify-content: space-between
-	align-items: center
-	background-color: rgba(251, 224, 224, 1)
-	padding: 7px 22px
-.btn-minus__goods,
-.btn-plus__goods
-	border: none
-	background-color: rgba(255, 255, 255, 1)
-	height: 30px
-	width: 30px
-	border-radius: 50%
-	font-family: 'Rubik', sans-serif
-	font-weight: bold
-	font-size: 14px
-	transition: all ease .5s
-	&:hover
-		color: #E81212
-.quantity-goods span
-	color: #443E3E
-	text-align: center
-	font-family: 'Rubik', sans-serif
-	font-size: 14px
-	font-style: normal
-	font-weight: bolder
-	line-height: 150%
-	text-transform: uppercase
-.in-cart
-	width: 130px
-	height: 100%
-	display: flex
-	align-items: center
-	justify-content: center
-	transition: all ease .5s
-.btn-in-cart
-	border: 1px solid #e81212
-	width: 100%
-	height: 100%
-	background-color: #fff
-	color: #E81212
-	font-family: Rubik
-	font-size: 12px
-	font-style: normal
-	font-weight: 400
-	line-height: normal
-	text-transform: uppercase
-	transition: all ease .5s
-	&:hover
-		font-weight: bolder
-// **************************
-// **************************
-// ****************************
-.order-on-click
-	margin-top: 20px
-	display: flex
-	justify-content: center
-	align-items: center
-	width: 100%
-	height: 44px
-.click-by
-	border: none
-	width: 100%
-	height: 100%
-	background: rgba(232, 18, 18, 1)
-	color:#FFF
-	font-family: Rubik
-	font-size: 12px
-	font-style: normal
-	font-weight: 400
-	line-height: normal
-	text-transform: uppercase
+// // ***************************
+// // ***************************
+// // ***************************
+// .product-actual__price
+// 	margin-top: 20px
+// 	display: flex
+// 	justify-content: center
+// 	align-items: center
+// .actual-price__list
+// 	display: flex
+// 	justify-content: start
+// .actual-price__item
+// 	margin-left: 10px
+// 	height: 27px
+// 	position: relative
+// 	&:first-child
+// 		margin-left: 0
+// .price
+// 	color: rgba(153, 153, 153, 1)
+// 	ont-family: 'Rubik', sans-serif
+// 	font-size: 18px
+// 	font-style: normal
+// 	font-weight: 400
+// 	line-height: 150%
+// 	text-decoration-line: strikethrough
+// 	text-transform: uppercase
+// 	position: relative
+// .price.not-actuale
+// 	&::before
+// 		position: absolute
+// 		content: ''
+// 		left: 0
+// 		top: 50%
+// 		width: 100%
+// 		height: 1px
+// 		background-color: rgba(153, 153, 153, 1)
+// .price.actuale
+// 	color: rgba(232, 18, 18, 1)
+// 	font-weight: bold
+// // **********************
+// // **********************
+// // **********************
+// .card-goods__item:hover .goods-item__footer
+// 	opacity: 1
+// .goods-item__footer
+// 	transition: opacity .5s ease
+// 	opacity: 0
+// 	width: 100%
+// 	height: 100px
+// 	position: absolute
+// 	z-index: 4
+// 	left: 0
+// 	bottom: -94px
+// 	background-color: #fff
+// .product-detail
+// 	margin-top: 20px
+// 	padding-left: 20px
+// 	padding-right: 20px
+// .wiped-out,
+// .caliber,
+// .duration
+// 	color: #646469
+// 	font-family: 'Rubik', sans-serif
+// 	font-size: 12px
+// 	font-style: normal
+// 	font-weight: 400
+// 	line-height: normal
+// 	& span
+// 		margin-left: 10px
+// 		color: #443E3E
+// 		font-family: 'Rubik', sans-serif
+// 		font-size: 12px
+// 		font-style: normal
+// 		font-weight: bolder
+// 		line-height: normal
+// .caliber, .duration
+// 	margin-top: 10px
+// // ************************
+// // ************************
+// // ************************
+// .product-btn-incar
+// 	margin-top: 20px
+// .product-btn-incar
+// 	display: flex
+// 	justify-content: space-between
+// 	width: 100%
+// 	height: 44px
+// .quantity-goods
+// 	width: 155px
+// 	height: 100%
+// 	display: flex
+// 	justify-content: space-between
+// 	align-items: center
+// 	background-color: rgba(251, 224, 224, 1)
+// 	padding: 7px 22px
+// .btn-minus__goods,
+// .btn-plus__goods
+// 	border: none
+// 	background-color: rgba(255, 255, 255, 1)
+// 	height: 30px
+// 	width: 30px
+// 	border-radius: 50%
+// 	font-family: 'Rubik', sans-serif
+// 	font-weight: bold
+// 	font-size: 14px
+// 	transition: all ease .5s
+// 	&:hover
+// 		color: #E81212
+// .quantity-goods span
+// 	color: #443E3E
+// 	text-align: center
+// 	font-family: 'Rubik', sans-serif
+// 	font-size: 14px
+// 	font-style: normal
+// 	font-weight: bolder
+// 	line-height: 150%
+// 	text-transform: uppercase
+// .in-cart
+// 	width: 130px
+// 	height: 100%
+// 	display: flex
+// 	align-items: center
+// 	justify-content: center
+// 	transition: all ease .5s
+// .btn-in-cart
+// 	border: 1px solid #e81212
+// 	width: 100%
+// 	height: 100%
+// 	background-color: #fff
+// 	color: #E81212
+// 	font-family: Rubik
+// 	font-size: 12px
+// 	font-style: normal
+// 	font-weight: 400
+// 	line-height: normal
+// 	text-transform: uppercase
+// 	transition: all ease .5s
+// 	&:hover
+// 		font-weight: bolder
+// // **************************
+// // **************************
+// // ****************************
+// .order-on-click
+// 	margin-top: 20px
+// 	display: flex
+// 	justify-content: center
+// 	align-items: center
+// 	width: 100%
+// 	height: 44px
+// .click-by
+// 	border: none
+// 	width: 100%
+// 	height: 100%
+// 	background: rgba(232, 18, 18, 1)
+// 	color:#FFF
+// 	font-family: Rubik
+// 	font-size: 12px
+// 	font-style: normal
+// 	font-weight: 400
+// 	line-height: normal
+// 	text-transform: uppercase

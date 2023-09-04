@@ -2,6 +2,7 @@
 // import "~/app/libs/mmenu/dist/mmenu.js";
 import $ from "jquery";
 import slick from "./slick/slick.min.js";
+
 import orderCall from "./moduls/orderCall.js";
 import searchForm from "./moduls/search.js";
 import icons from "./moduls/icons.js";
@@ -31,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ".search-input__wrapper.animate__animated",
     ".form-circle.animate__animated"
   );
-  mainSlider(".slider-main__page");
+  // mainSlider(".slider-main__page");
   accordion(".accordion", ".accordion__control", ".accordion__content");
   asideList(".navigation-page__btn", ".navigation-modal", ".sidebar-menu");
 });
