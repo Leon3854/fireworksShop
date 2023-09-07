@@ -1,6 +1,6 @@
 const cartSlider = function (triggerSlider) {
-  trigger = document.querySelectorAll(triggerSlider);
-  $(trigger).slick({
+  triggerbtns = document.querySelectorAll(triggerSlider);
+  $(triggerbtns).slick({
     dots: true,
     arrows: true,
     prevArrow:
