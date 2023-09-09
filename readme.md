@@ -1,5 +1,5 @@
-<h1>OptimizedHTML 5</h1>
-<p>Lightweight production-ready Gulp starter.</p>
+<h1>Энергия праздника</h1>
+<p>Сайт сделан в качестве примера вёрстки</p>
 
 <p>
 	<img src="https://raw.githubusercontent.com/agragregra/oh5/master/app/images/src/preview.jpg" alt="Start HTML Template">
