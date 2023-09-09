@@ -1,5 +1,5 @@
 .choice-fire
-	border: 2px solid red
+	// border: 2px solid red
 	padding-top: 100px
 
 .choice__under-text
@@ -9,9 +9,6 @@
 		@include myfont(#646469, $rub, 14px, normal, 400, 21px, none)
 
 .management-product__btns
-	margin: 0
-	padding: 0
-	border: 2px solid green
 	margin-top: 40px
 	@include myflex(row, flex-start)
 	align-items: center
@@ -49,14 +46,21 @@
 		color: $whitecolor
 // *****************
 .management-cards__list
-	border: 3px solid black
 	margin-top: 30px
-	padding: 30px
+	position: relative
 .card-goodes__list
 	display: grid
-	// grid-template-columns: repeat(auto-fit, minmax(285px, 2fr))
+	grid-template-columns: repeat(auto-fit, minmax(285px, 1fr))
+	justify-items: center
 
-
+.corall-line
+	background-color: rgba(251, 224, 224, 1)
+	width: 100%
+	height: 1px
+	left: 0
+	top: 460px
+	position: absolute
+	z-index: 2
 // ****************************
 // **CARD-GOODS__ITEM-CHOICE **
 // ****************************
@@ -519,13 +523,90 @@
 // ****************************
 // *********  MEDIA  **********
 // ****************************
+@media (max-width: 1800px)
+	.card-goods__item
+		&::after
+			width: 300px
+			height: 1px
+			background: rgba(251, 224, 224, 1)
+	.card-goods__item:nth-child(4)
+		&::before
+			background: rgba(251, 224, 224, 0)
+	.card-goods__item:nth-child(8)
+		&::before
+			background: rgba(251, 224, 224, 0)
+	.card-goods__item:nth-child(5),
+	.card-goods__item:nth-child(6),
+	.card-goods__item:nth-child(7),
+	.card-goods__item:nth-child(8)
+		&::after
+			width: 300px
+			height: 1px
+			background: rgba(251, 224, 224, 0)
+
+@media (max-width: 1140px)
+	.card-goods__item
+		&::after
+			width: 400px
+			height: 1px
+			left: -50px
+			background: rgba(251, 224, 224, 1)
+	.card-goods__item:nth-child(3),
+	.card-goods__item:nth-child(6)
+		&::before
+			background: rgba(251, 224, 224, 0)
+	.card-goods__item:nth-child(4),
+	.card-goods__item:nth-child(8)
+		&::before
+			background: rgba(251, 224, 224, 1)
+	.card-goods__item:nth-child(5),
+	.card-goods__item:nth-child(6)
+		&::after
+			width: 400px
+			left: -50px
+			background: rgba(251, 224, 224, 1)
+
+@media (max-width: 855px)
+	.card-goods__item:nth-child(2n)
+		&::before
+			background: rgba(251, 224, 224, 0)
+	.card-goods__item:nth-child(3)
+		&::before
+			background: rgba(251, 224, 224, 1)
+	.card-goods__item:nth-child(1),
+	.card-goods__item:nth-child(2),
+	.card-goods__item:nth-child(3),
+	.card-goods__item:nth-child(4),
+	.card-goods__item:nth-child(5),
+	.card-goods__item:nth-child(6)
+		&::after
+			width: 300px
+			left: 0px
+			background: rgba(251, 224, 224, 1)
+	
+
+
 @media (max-width: 657px)
 	.choice-product__btn
 		padding: 8px 10px
 		span
 			@include myfont($textcolor, $rub, 12px, normal, 300, 21px, uppercase)
 
+@media (max-width: 570px)
+	.card-goods__item,
+	.card-goods__item:nth-child(3)
+		&::before
+			background: rgba(251, 224, 224, 0)
+	
+	
+
 @media (max-width: 526px)
+	.choice-fire
+		padding-top: 50px
+		padding-left: 10px
+		padding-right: 10px
+	.choice-fire__title h2
+		font-size: 24px
 	.choice-product__btn
 		width: 100%
 		display: flex
