@@ -8,6 +8,7 @@ import searchForm from "./moduls/search.js";
 import icons from "./moduls/icons.js";
 import rating from "./moduls/rating.js";
 import mainSlider from "./moduls/mainSlider.js";
+import nameSliders from "./moduls/sliders.js";
 import accordion from "./moduls/accordion.js";
 import asideList from "./moduls/asidemenu.js";
 document.addEventListener("DOMContentLoaded", () => {
@@ -16,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
   icons(".color-click-cart", ".ico-cart__border", ".ico-cart__fill");
   icons(".color-cart-goods", ".cart-goods__border", ".cart-goods__fill");
   icons(".card-icon__heart", ".goods__border", ".goods__fill");
-
   icons(".color-click-arrow", ".bg-arrow__left", ".bg-arrow__right");
   rating(".rating");
   orderCall(
@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ".form-circle.animate__animated"
   );
   // mainSlider(".slider-main__page");
+  nameSliders(".presentation-slider");
   accordion(".accordion", ".accordion__control", ".accordion__content");
   asideList(".navigation-page__btn", ".navigation-modal", ".sidebar-menu");
 });
